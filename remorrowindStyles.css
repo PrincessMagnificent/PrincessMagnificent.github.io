@@ -1,0 +1,128 @@
+/*div {
+    border: 1px solid black;
+}*/
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+#header {
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: left;
+    width: 90%;
+    /*ems are multiples of standard size,
+    vw resizes based on size of screen*/
+    font-size:2em;
+    
+    background-color: brown;
+    background: -webkit-linear-gradient(left,brown,white); /*safari*/
+    background: -o-linear-gradient(right, brown,white); /*opera*/
+    background: -moz-linear-gradient(right,brown,white); /*firefox*/
+    background: linear-gradient(to right,brown,white); /*standard*/        
+}
+
+#navbar {
+    background-color: brown;
+    overflow: hidden;
+    
+    background: -webkit-linear-gradient(left,brown,white); /*safari*/
+    background: -o-linear-gradient(right, brown,white); /*opera*/
+    background: -moz-linear-gradient(right,brown,white); /*firefox*/
+    background: linear-gradient(to right,brown,white); /*standard*/ 
+}
+
+#navbar div {
+    display: inline-table;
+/*    border: 1px solid black;*/
+    padding: 5px;
+}
+
+#jumbotron {
+    overflow: hidden;
+    position: relative;
+    background-image: url(images/morrowind1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-top: 10px;
+}
+
+/*so even here, it already connects the h1 and p to ones outside of the jumbotron.*/
+#jumbotext {
+    position:relative;
+    top: 120px;
+    left: 50px;
+    color:white;
+    text-shadow: 1px 1px 5px black;
+}
+
+#jumbotext h1 {
+    font-size: 450%;
+}
+
+#jumbotext p {
+    font-size: 200%;
+}
+
+#contentSection {
+    width: 70%;
+    text-align: justify;
+    float: left;
+    margin: 0px;
+    display:block;
+}
+
+.chapterBlock {
+    display: block;
+    padding-right: 20px;
+}
+
+#newsTicker {
+    width: 30%;
+    float:right;
+    text-align: right;
+    margin: 0px;
+    background-color: rosybrown;
+}
+
+.mainContents {
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+
+.newsItem {
+    margin-top: 5px;
+}
+
+#mainThing {
+    display: inline-table;
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer{
+    color: white;
+    font-size: 70%;
+    background-color: brown;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: right;
+    font-style: italic;
+}
+/*on a smaller screen, make the whole thing wide*/
+@media only screen and (max-width: 700px) {
+    body {
+        width: 100%;
+    }
+    #jumbotext p {
+        font-size: 5vw;
+    }
+    #jumbotext h1 {
+        font-size: 18vw;
+    }
+    
+}

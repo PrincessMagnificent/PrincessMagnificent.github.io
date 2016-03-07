@@ -1,0 +1,53 @@
+/*INPUTNOSHEET*/
+
+.header {
+    background-color: black;
+    color: white;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    padding:3px;
+}
+
+.item {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 3px;
+    font-size: 200%;
+    }
+    
+.entryfield {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    text-align:center;
+}
+/*This section is just me figuring out how to do multiple divs that are centered in a parent element.
+turns out that ***#zero*** is the hero Gotham needs.*/
+.aligner {
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+    display: inline-block;
+}
+
+#one {
+    border: 1px dashed blue;
+
+}
+#two {
+    background-color: yellow;
+}
+#three {
+    border: 1px dashed green;
+
+}
+#zero {
+    text-align:center;
+}
