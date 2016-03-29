@@ -78,6 +78,7 @@ li {
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
+    background-attachment: fixed;
 }
 
 /*This is some stuff from cssload.net
