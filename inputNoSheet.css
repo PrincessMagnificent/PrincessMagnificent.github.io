@@ -21,12 +21,95 @@
     font-size: 200%;
     }
     
-.entryfield {
-    width: 80%;
+.testGlow {
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
     text-align:center;
+    font: italic bold 3em Georgia, serif;
+  /*  text-shadow: 1px 1px 30px black;*/
+    -webkit-transition: all 3s; /* For Safari 3.1 to 6.0 */
+    transition: all 3s;
+    
+    animation-name: Blip;
+		-o-animation-name: Blip;
+		-ms-animation-name: Blip;
+		-webkit-animation-name: Blip;
+		-moz-animation-name: Blip;
+	animation-duration: 2s;
+		-o-animation-duration: 1s;
+		-ms-animation-duration: 1s;
+		-webkit-animation-duration: 0.3s;
+		-moz-animation-duration: 1s;
+    animation-direction: alternate;
+        -o-animation-direction: alternate;
+        -ms-animation-direction: alternate;
+        -webkit-animation-direction: alternate;
+        -moz-animation-direction: alternate;
+    	animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite;
+		-ms-animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+		-o-animation-timing-function: linear;
+		-ms-animation-timing-function: linear;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-timing-function: linear;
+}
+
+@keyframes Blip {
+	from {
+		text-shadow: 1px 1px 5px cyan;
+        color: cyan;
+	}
+	to {
+		text-shadow: -1px -1px 20px magenta;
+        color: magenta;
+	}
+}
+
+@-o-keyframes Blip {
+	from {
+		-o-transform: rotate(360deg);
+	}
+	to {
+		-o-transform: rotate(0deg);
+	}
+}
+
+@-ms-keyframes Blip {
+	from {
+		-ms-transform: rotate(360deg);
+	}
+	to {
+		-ms-transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes Blip {
+	from {
+		-webkit-transform: rotate(360deg);
+	}
+	to {
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@-moz-keyframes Blip {
+	from {
+		-moz-transform: rotate(360deg);
+	}
+	to {
+		-moz-transform: rotate(0deg);
+	}
+}
+
+.testGlow:hover {
+    /*text-shadow: 1px 1px 30px red;*/
+    color: red;
+    background-color: black;
+    font-size: 4em;
 }
 /*This section is just me figuring out how to do multiple divs that are centered in a parent element.
 turns out that ***#zero*** is the hero Gotham needs.*/
