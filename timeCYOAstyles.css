@@ -19,8 +19,17 @@ ul li {
     float:left;
 }
 
+.itemList {
+    display: inline;
+}
+
 .itemList  img{
-    border: 1px solid red;
+    float: left;
+}
+
+.item {
+    width: 33%;
+    float: left;
 }
 
 .badness {
