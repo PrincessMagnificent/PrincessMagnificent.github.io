@@ -5,16 +5,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="according to HTML5 Game from scratch step by step learning JavaScript - Shortcut" />
 	<link rel="stylesheet" type="text/css" href="pakManStyles.css" />
-    <script src="pakManScript.js"></script>
+    
 </head>
 
 <body>
-    <canvas id="newcanvas" width="300" height="300"></canvas>
-    <script type="text/javascript">
-        var canvas = document.getElementById("newcanvas");
-        var ctx = canvas.getContext("2d");
-        ctx.fillStyle = "#000000";
-        ctx.fillRect(50,10,100,200);
-    </script>
+    <div class="testDiv">I am DV</div>
+    <canvas id="canvasSpace" width="600" height="400"></canvas>
+    <script src="pakManScript.js"></script>
+    <!--Gotta make sure everything has loaded before loading the javascript, so it's here below instead of in the head-->
 </body>
 </html>
