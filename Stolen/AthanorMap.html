@@ -1,0 +1,115 @@
+
+<!-- saved from url=(0068)https://dl.dropboxusercontent.com/u/17553329/Athanor/AthanorMap.html -->
+<html mode="normal"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+
+window.onload = function(){
+
+    var images = [
+        "Park and Zoo small.png",
+        "Estates small.png",
+        "Residential small.png",
+        "Sun Temple small.png",
+        "The Maze small.png",
+        "The Rift small.png",
+        "The Towers small.png"
+    ];
+    
+    var num_images = images.length;
+    
+    var mapdiv = document.getElementById('athanormap');
+    
+    var hex_size = 500;
+    var horizontal_hex_size = hex_size * (3/4) + 2
+    var vertical_hex_size = hex_size * (3/7) + 2
+    
+    var image_positions = [
+        {'top': 0, 'left': horizontal_hex_size},
+        {'top': vertical_hex_size, 'left': 0},
+        {'top': vertical_hex_size, 'left': horizontal_hex_size*2},
+        {'top': vertical_hex_size*2, 'left': horizontal_hex_size},
+        {'top': vertical_hex_size*3, 'left': 0},
+        {'top': vertical_hex_size*3, 'left': horizontal_hex_size*2},
+        {'top': vertical_hex_size*4, 'left': horizontal_hex_size}
+    ];
+    
+    var image_order = random_order(num_images);
+    
+    for(var i = 0; i < num_images; i++){
+        mapdiv.innerHTML = mapdiv.innerHTML + '<img src="' 
+            + images[image_order[i]] 
+            + '" style="left: ' 
+            + image_positions[i].left
+            + 'px; top: '
+            + image_positions[i].top
+            + 'px; transform: rotate('
+            + random_rotate()
+            + 'deg);" class="hex" />';
+    }
+    
+    function random_rotate(){
+        return Math.floor( Math.random() * 6 ) * 60;
+    }
+    
+    function random_order(num){
+        var original_order = [];
+        
+        for(var i = 0; i < num; i++){
+            original_order[i] = i;
+        }
+        
+        
+        var scrambled_order = [];
+        var temp;
+        
+        for(var i = 0; i < num; i++){
+            temp = Math.floor(Math.random() * (num-i));
+            scrambled_order[i] = original_order[temp];
+            original_order.splice(temp, 1);
+        }
+        
+        return scrambled_order;        
+    }
+
+}
+
+</script>
+
+<style>
+body {
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    color: #c90;
+    font-variant: small-caps;
+    margin: 0px 0px 4px 0px;
+}
+
+p {
+    margin: 4px 0px 4px 0px;
+}
+
+.hex {
+    position: absolute;
+    transform-origin: center center;
+}
+
+#athanormap {
+    position: absolute;
+    top: 0px
+}
+
+</style>
+
+<style id="night_mode">html[mode="night"] { -webkit-filter: contrast(70%) brightness(80%) invert(); }html[mode="night"] img, html[mode="night"] i span, html[mode="night"] i, html[mode="night"] video { -webkit-filter: invert(); }html[mode="night"][data-player-size="fullscreen"] .html5-video-container {-webkit-filter: invert();}html[mode="night"] object[type="application/x-shockwave-flash"], html[mode="night"] object[type="application/x-shockwave-flash"] { -webkit-filter: invert();  !important; }html[mode="night"] embed[type="application/x-shockwave-flash"], html[mode="night"] embed[type="application/x-shockwave-flash"] { -webkit-filter: invert();  !important; }</style></head>
+
+<body>
+
+<h1>Athanor City</h1>
+<p>Reload to randomize this map.</p>
+
+<div id="athanormap"><img src="./AthanorMap_files/Park and Zoo small.png" style="left: 377px; top: 0px; transform: rotate(0deg);" class="hex"><img src="./AthanorMap_files/The Towers small.png" style="left: 0px; top: 216.28571428571428px; transform: rotate(180deg);" class="hex"><img src="./AthanorMap_files/The Rift small.png" style="left: 754px; top: 216.28571428571428px; transform: rotate(180deg);" class="hex"><img src="./AthanorMap_files/Estates small.png" style="left: 377px; top: 432.57142857142856px; transform: rotate(0deg);" class="hex"><img src="./AthanorMap_files/The Maze small.png" style="left: 0px; top: 648.8571428571429px; transform: rotate(0deg);" class="hex"><img src="./AthanorMap_files/Sun Temple small.png" style="left: 754px; top: 648.8571428571429px; transform: rotate(120deg);" class="hex"><img src="./AthanorMap_files/Residential small.png" style="left: 377px; top: 865.1428571428571px; transform: rotate(300deg);" class="hex"></div>
+
+
+</body><button id="javascript-popup-blocker-notify" style="display: none;"></button></html>
