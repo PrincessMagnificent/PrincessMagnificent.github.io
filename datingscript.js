@@ -39,6 +39,7 @@ var users = [
         avatar: "images/sayaka.gif"
     },
 ];
+var resultsHTML = "";
 
 var usersLength = users.length;
 
@@ -46,7 +47,7 @@ for(var i = 0; i < usersLength; ++i) {
     resultsHTML += users[i].name;
 }
 
-var resultsHTML = "";
+
 
 /*This function is what happens h+when the Search button is clicked, it is attached to the actual button at the bottom of the file*/
 function butonKlikd() {
@@ -63,9 +64,12 @@ function butonKlikd() {
     console.log(s);
     var gender = genderField.options[s].value;
     var genderOption = genderField.option[s];
+        
+    
     /*option[s] gives us the entire html of the option, if we go .value it only gives us the value defined IN the HTML*/
     console.log("genderOption ", genderOption);
     console.log("gender ", gender);
+    resul
 }
 
 /*Add an event listener waiting for the WINDOW to LOAD, and when that happens, it triggers our function*/
