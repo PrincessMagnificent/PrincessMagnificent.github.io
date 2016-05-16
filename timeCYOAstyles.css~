@@ -14,14 +14,15 @@ h1 {
 ul {
     display:inline-table;
     list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 
 
 .itemList  img{
     float: left;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .item {
