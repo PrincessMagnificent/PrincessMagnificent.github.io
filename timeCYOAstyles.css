@@ -12,23 +12,28 @@ h1 {
 }
 
 ul {
-    display:inline-table;
+    /*display:inline-table;*/
+    display:table;
     list-style-type: none;
 }
 
-
+.largeSection {
+    text-align: center;
+}
 
 .itemList  img{
     float: left;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 10px;
 }
 
 .item {
-    width: 33%;
+    width: 32%;
     float: left;
-    border-color: 1px solid black;
     padding: 2px;
+    text-align: justify;
+    margin: 2px;
+    display: table-cell;
+    /*height: 240px;*/
 }
 
 .badness {
@@ -76,6 +81,7 @@ ul {
     }
     
     body {
-        background-color: red;    
+        font-size: 0.7em;
+        font-family: Helvetica, sans-serif;
     }
 }
