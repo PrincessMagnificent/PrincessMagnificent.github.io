@@ -74,6 +74,7 @@ body {
     float: left;
     margin: 0px;
     display:block;
+    background-color: lightgoldenrodyellow;
 }
 
 .chapterBlock {
@@ -92,7 +93,7 @@ body {
 .mainContents {
     padding-bottom: 100%;
     margin-bottom: -100%;
-}
+    }
 
 .newsItem {
     margin-top: 5px;
@@ -102,6 +103,7 @@ body {
     display: inline-table;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
 #footer{
@@ -112,6 +114,7 @@ body {
     margin-top: 5px;
     text-align: right;
     font-style: italic;
+    overflow: auto;
 }
 /*on a smaller screen, make the whole thing wide*/
 @media only screen and (max-width: 700px) {
