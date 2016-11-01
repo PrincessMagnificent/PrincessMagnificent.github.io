@@ -1,0 +1,62 @@
+<!doctype html>
+<head>
+	<title>Display HTML text</title>
+</head>
+
+<body>
+	<p id="output">Death to humans</p>
+	<div id="targetDiv"></div>
+
+	<button id="clicker">KLEEK</button>
+
+	<input id="input" type="text" placeholder="enterSOMEtext"/>
+	<button id="inputter">NUKLIK</button>
+	<p id="output2"></p>
+
+	<script>
+	var output = document.querySelector("#output");
+	output.innerHTML = "Hello World!";
+	output.style.color = "red";
+	output.style.textDecoration = "underline";
+	//hELLO wORLD has now replaced the original "death to humans" message
+	//the style has also been changed
+	//text-decoration in ordinary CSS. textDecoration when altered via Javascript.
+	//also querySelector doesn't need #id, it can work with .class instead
+
+	var newP = document.createElement("p");
+	var myTarget = document.querySelector("#targetDiv");
+	myTarget.appendChild(newP);
+	//document.body.appendChild or just what you've already selected.
+	newP.innerHTML = "oPEN tHE nEXT";
+
+	var button = document.querySelector("#clicker");
+	button.addEventListener("click", WhenUclick, false);
+	function WhenUclick() {
+		console.log("BOTAN KLIKED");
+		button.style.display = "none";
+	}
+	//on click, run function WhenUclick. Starts out unclicked.
+	//POTENTIAL-EVENTS-MOUSE: mousedown, mouseup, click, dblclick, mousemove, mouseover, mouseout
+	//button.removeEventListener(--||--);
+
+	window.addEventListener("keydown", keydownHandler, false);
+	function keydownHandler(event) {
+		console.log(event.keyCode);
+	}
+	//detects keystrokes, keys are ASCII codes
+
+	var button2 = document.querySelector("#inputter");
+	button2.addEventListener("click", otherWhenYouKlik, false);
+	button2.style.cursor = "pointer";
+	//other styles = move, wait, help, crosshair, text, auto, n-resize
+	function otherWhenYouKlik() {
+		var input = document.querySelector("#input");
+		var output = document.querySelector("#output2");
+		output.innerHTML = input.value;
+	}
+	//input text, klick on button to submit
+	</script>
+
+
+</body>
+</html>
