@@ -28,7 +28,7 @@
         else if (playerGuess < mysteryValue) {
             output.innerHTML = "too low, AIM HIGHER";
         }
-        else {
+        else if (playerGuess === mysteryValue) {
             output.innerHTML = "YESSSSSSSSSS";
         }
         //This right now gives you a victory if you input a non-number such as a letter. Because it's not either higher or lower. Bummer.
