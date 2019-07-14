@@ -1,0 +1,97 @@
+body {
+    background-color: white;
+}
+
+.floatyleft {
+    float:left;
+}
+
+.floatyright div {
+    float:right;
+}
+
+
+/*  LOGO BULLSHIT  */
+.logo {
+    color: white;
+
+    font-family:monospace;
+    
+    border-color: white;
+    border-radius: 45px;
+    border-style: solid;
+    border-width: thick;
+    
+    height: 100px;
+    width: auto;
+    display: inline-block;
+    
+    background-color: forestgreen;
+    
+    transition: 0.5s;
+    float:left;
+}
+
+.logo:hover {
+    background-color: darkgreen;
+    box-shadow: 10px 0px 20px forestgreen;
+}
+
+.logo img {
+    height: 95%;
+    padding: 10px;
+    float: left;
+    padding-left: 20px;
+}
+
+.logo p {
+    font-size: 55px;
+    padding: 5px;
+    float: left;
+    vertical-align: middle;
+    font-variant: small-caps;
+    padding-right: 20px;
+    border-style: hidden;
+}
+/* LOGO BULLSHIT ENDS */
+
+/* NAVBAR */
+
+
+
+#navigationbar div{
+    display: inline-block;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: medium;
+    background-color: forestgreen;
+    color: white;
+    vertical-align: middle;
+    padding: 5px;
+    font-size: 2em; 
+}
+
+#navigationbar .floatyright {
+    background-color: white;
+}
+
+/* NAVBAR  */
+
+.jumbotron {
+    background-image: url(imgs/megaJumbo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.jumbotron h1 {
+    color:white;
+    text-shadow: 5px 5px 20px black;
+    font-size: 8em;
+}
+
+.jumbotron p {
+    color:white;
+    text-shadow: 5px 5px 10px black;
+    font-size: 3em;
+}
