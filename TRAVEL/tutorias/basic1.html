@@ -14,16 +14,49 @@
 
     <div class="container-fluid">
         
+        
+        <div id="app" class="container">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricingg</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url('/login') }}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url('/register') }}">Register</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+        
+        
         <div id="navigationbar">
             <div class="logo floatyleft">
                 <img src="imgs/whiteTreeSilhouette.png" alt="the Forest Journeys logo"></img>
                 <p>Forest Journeys</p>
             </div>
             <div class="floatyright">
-                <div>Destinations</div>
-                <div>About us</div>
-                <div>Contacts</div>
-                <div>SEARCHBAR</div>
+                
+                <!--NOTA BENE
+                because of our floatiation, these are in REVERSE ORDER-->
+                <div>SearchBar</div>
+                <a href="Contacts.html"><div>Contacts</div></a>
+                <a href="AboutUs.html"><div>About Us</div></a>
+                <a href="Destinations.html"><div>Destinations</div></a>
             </div>
         </div>
     

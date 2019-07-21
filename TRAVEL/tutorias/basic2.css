@@ -57,20 +57,28 @@ body {
 
 /* NAVBAR */
 
-#navigationbar {
+#navbarid {
+    background-color: forestgreen;
+}
+
+/* OLD NAVBAR     #navigationbar {
     display:inline-block;
 }
 
-#navigationbar div{
+#navigationbar div:last-child{
     display: inline-block;
     border-radius: 10px;
     border-style: solid;
     border-width: medium;
-    background-color: forestgreen;
     color: white;
     vertical-align: middle;
     padding: 5px;
     font-size: 100%; 
+}
+
+#navigationbar a div{
+    background-color: forestgreen;
+    float: right;
 }
 
 #navigationbar .floatyright {
@@ -96,4 +104,18 @@ body {
     color:white;
     text-shadow: 5px 5px 10px black;
     font-size: 3em;
+}
+
+/* Destinations Carousel */
+
+#destinationCarou {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+#destinationCarou img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
 }
