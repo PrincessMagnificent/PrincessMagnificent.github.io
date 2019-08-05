@@ -61,6 +61,13 @@ body {
     background-color: forestgreen;
 }
 
+#navbarid .activated {
+    color: white;
+    background-color: darkgreen;
+    box-shadow: 0px 0px 5px 5px darkgreen;
+    border-radius: 15px;
+}
+
 /* OLD NAVBAR     #navigationbar {
     display:inline-block;
 }
@@ -111,11 +118,11 @@ body {
 #destinationCarou {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 700px;
+
 }
 
 #destinationCarou img {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 700px;
+
 }
