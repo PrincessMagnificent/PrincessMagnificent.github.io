@@ -164,6 +164,53 @@ body {
     max-width: 100%;
   }
 }
+/* HOVER OVER IMAGE GRID */
+
+#test111 {
+    position: relative;
+}
+
+.hoverers img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hoverers .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: forestgreen;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+    border-radius: 30px;
+}
+
+.overlaidtext {
+    color: white;
+    font-size: 20px;
+    position:absolute;
+    top: 200%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: forestgreen;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px forestgreen;
+}
+
+
+
 
 /*FOOTER*/
 
@@ -178,4 +225,10 @@ body {
 
 img {
     max-width: 100%;
+}
+
+
+.james {
+    border-style: dashed;
+    border-color: firebrick;
 }
