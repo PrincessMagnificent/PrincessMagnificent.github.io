@@ -206,7 +206,7 @@ body {
     text-align: center;
     background-color: forestgreen;
     border-radius: 50%;
-    box-shadow: 0px 0px 20px forestgreen;
+    box-shadow: 0px 0px 20px 20px forestgreen;
 }
 
 
