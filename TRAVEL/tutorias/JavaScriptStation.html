@@ -1,14 +1,17 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-    <title>FORESTJOURNEY - ABOUT US</title>
+    <title>FORESTJOURNEY - JAVASCRIPT TESTING STATION</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+        
     <link rel="stylesheet" href="basic2.css"> 
+    <link rel="stylesheet" href="javatest.css">
 </head>
 <body>
     
@@ -21,7 +24,7 @@
             <!-- Brand/logo -->
             <a class="navbar-brand" href="basic2.html">
                 <img src="imgs/whiteTreeSilhouette.png" alt="logo" style="width:40px;">
-                Forest Journeys
+                Forest Journeys TOP SECRET EXPERIMENTS
             </a>
 
             <!-- Links -->
@@ -59,7 +62,7 @@
     <!-- Call to Action Well -->
     <div class="card text-white bg-secondary my-5 py-4 text-center">
       <div class="card-body">
-        <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+        <p class="text-white m-0" id="call">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
       </div>
     </div>
 
@@ -117,6 +120,10 @@
     </div>
     <!-- /.container -->
   </footer>
+    
+<!--cannot put the script in front of the div containing the ID for GetDocumentFromID, because the ID doesn't exist by the time the damn thing tries to find it-->
+        <script type="text/javascript" src="javaScriptExperiment.js"></script>    
+
     
 </body>
 </html> 
