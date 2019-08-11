@@ -81,6 +81,18 @@ var model = {
 var controller = {
     guesses: 0,
     processGuess: function (guess) {
+        var location = controller.parseGuess(guess);
+        if (location) {
+            this.guesses++;
+            var hit = model.fire(location);
+
+            if (hit && model.shipsSunk === model.numShips) {
+                view.displayMessage("You sank all my battleships, in " + this.guesses + " guesses");
+            }
+        }
+    },
+
+    parseGuess: function (guess) {
         // this gets a guess from the player in a certain format (like A2) and transltes t into a guess we can work with, like 02, and makes sure it's valid at all
         var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
 
@@ -91,19 +103,52 @@ var controller = {
             var row = alphabet.indexOf(firstChar);
             //this translates A into 0, B into 1 and so on
             var column = guess.charAt(1);
-            
-            
-        }
-        
-        
 
+            if (isNaN(row) || isNaN(column)) {
+                alert("You have reached beyond the board.");
+            } else if (row < 0 || row >= model.boardSize || column < 0 || column >= model.boardSize) {
+                alert("You have extended too far and fallen off the board.");
+            } else {
+                return row + column; //we have concatenated the two strings
+            }
+        }
+        return null;
     }
+
 };
+
+function init() {
+    var fireButton = document.getElementById("fireButton"); //id of the firebutton div
+    fireButton.onclick = handleFireButton; //Then we can add a click handler function named handleFireButton to the button.
+    
+    var guessInput = document.getElementById("guessInput");
+    guessInput.onkeypress = handleKeyButton; // now we're making a button on keyboard handler in case you push enter instead of clicking fire, so we need a handlekeyButton() function alongside our handleFireButton() function
+}
+
+function handleFireButton() {
+    // code to get the value from the form
+    console.log("FIREBUTTON CLICKED");
+    var guessInput = document.getElementById("guessInput");
+    var guess = guessInput.value;
+    guess = guess.toUpperCase();
+    console.log("INPUT = " + guess);
+    
+    controller.processGuess(guess);
+    guessInput.value = "";
+
+}
+
+function handleKeyButton(e) {
+    var fireButton = document.getElementById("fireButton");
+    if (e.keyCode == 13) {
+        fireButton.click();
+        return false; //we don't need to do anything else
+    }
+} //e is the key pressed, the handler passes key press events
+
+window.onload = init; //we want the browser to run init when the page is fully loaded
+
 
 
 //*TESTING AREA*//
-model.fire("00");
 
-model.fire("06");
-model.fire("16");
-model.fire("26");

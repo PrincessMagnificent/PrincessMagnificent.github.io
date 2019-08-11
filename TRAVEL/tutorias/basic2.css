@@ -209,7 +209,23 @@ body {
     box-shadow: 0px 0px 20px 20px forestgreen;
 }
 
+/*SOCIAL INTERACTION*/
 
+#socialStuff {
+    margin: 10px;
+    height: 72px;
+}
+
+#socialStuff img {
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    #socialStuff {
+        margin: 5px;
+        height: 50px;
+    }
+}
 
 
 /*FOOTER*/

@@ -1,6 +1,6 @@
 Download itinerary as a file (PDF?)
 
-Email contact
+Email contact (maybe something that lets you input your email and it then tells you that it sent an email to tha address although of course nothing happens)
 
 Follow us on social media! (icons)
 
@@ -13,5 +13,12 @@ need to work on ABOUT US
 
 javascript?!
 
+some sort of search, that does autocomplete
+
 tours.
 Maybe something that lets you log in? Remembers your username and password.
+
+FRONT PAGE: NOVICE IN OBVESTILA
+
+FORESTGREEN: 228B22 34,139,34
+icon...72px?
