@@ -43,27 +43,62 @@
 
 
         <div class="jumbotron">
-            <h1>Open the world.</h1>
+            <h3>Open the world.</h3>
             <p>Discover your dreams.</p>
         </div>
 
         <div id="myPlayground">
-            <p>Here is some <code>secret code</code></p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="target"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2>Subscribe to our Newsletter</h2>
+                        <form action="javascript:getMyStuff(fn.value, mail.value);">
+                            <!--replace this to point at JAVASCRIPT-->
+                            Name:<br>
+                            <input type="text" name="firstname" id="fn" placeholder="Your Name" value="">
+                            <br>
+                            Email:<br>
+                            <input type="email" name="email" size="30" id="mail" placeholder="Your.Mail@gmail.com" value="">
+                            <br><br>
+                            <input type="submit" class="botan" value="Submit">
+                        </form>
+                        <form action="javascript:forgetMe();">
+                            <input type="button" class="botan" id="forgetButton" value="Forget Me">
+                        </form>
+                    </div>
+                    <div class="col-sm-7">
+                        <h2>Recent News</h2>
+                        <ul class="newslist">
+                            <li>
+                                <h4>14.8.2019</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </li>
+                            <li>
+                                <h4>12.8.2019</h4>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </li>
+                            <li>
+                                <h4>03.8.2019</h4>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </li>
+                            <li>
+                                <h4>24.5.2019</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </li>
+                            <li>
+                                <h4>03.3.2018</h4>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-        <div class="col-sm-8" style="background-color:lavenderblush;">
-            <div class="col" style="background-color:grey;"><a href="Destinations.html#anchor1">Anchor1</a></div>
-            <div class="col" style="background-color:dimgray;"><a href="Destinations.html#anchor2">Anchor2</a></div>
-            <div class="col" style="background-color:darkgray;"><a href="Destinations.html#anchor3">Anchor3</a></div>
-            <div class="col" style="background-color:dimgray;"><a href="Destinations.html#anchor4">Anchor4</a></div>
-            <div class="col" style="background-color:grey;"><a href="Destinations.html#anchor5">Anchor5</a></div>
-        </div>
-    </div>
-
-
+    <hr>
 
     <!--RESPONSIVE IMAGE GALLERY???-->
     <div id="respondImageGallery" class="container-fluid">
@@ -143,6 +178,8 @@
         </div>
     </div>
 
+    <hr>
+
     <div id="socialStuff">
         <a href="www.facebook.com"><img src="imgs/icons/iconFace.png"></a>
         <a href="www.google.com"><img src="imgs/icons/iconGoogle.png"></a>
@@ -160,5 +197,7 @@
         </div>
         <!-- /.container -->
     </footer>
+
+    <script type="text/javascript" src="basic2.js"></script>
 
 </body></html>

@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function handleIt(text) {
+            alert("hello");
+            console.log("text");
+            console.log(text);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myform" action="javascript:handleIt(fn.value)">
+        <input type="text" name="firstname" id="fn" placeholder="Your Name" value="Mickey">
+        <input name="Submit" type="submit" value="Update" />
+    </form>
+</body></html>
+
+/* HERE IS THE BIG SECRET, LOOK AT THE ACTION, IT REFERENCES THE ID OF THE INPUT*/

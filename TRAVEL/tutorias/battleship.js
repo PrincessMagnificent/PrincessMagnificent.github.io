@@ -138,6 +138,8 @@ function handleFireButton() {
 
 }
 
+
+
 function handleKeyButton(e) {
     var fireButton = document.getElementById("fireButton");
     if (e.keyCode == 13) {

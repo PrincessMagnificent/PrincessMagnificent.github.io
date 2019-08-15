@@ -101,7 +101,7 @@ body {
     height: 700px;
 }
 
-.jumbotron h1 {
+.jumbotron h3 {
     color:white;
     text-shadow: 5px 5px 20px black;
     font-size: 8em;
@@ -226,7 +226,58 @@ body {
         height: 50px;
     }
 }
+/*IDENTITY*/
 
+.targetclass {
+    border: 5px solid forestgreen;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2em;
+    font-family: sans-serif;
+    color: forestgreen;
+    font-weight: 900;
+    margin: 10px;
+}
+
+/*NEWSLIST*/
+
+.newslist li {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+input.botan{
+    margin: 5px;
+    background-color: forestgreen;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h2 {
+    background-color: forestgreen;
+    color: white;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 10px;
+}
+
+h1 {
+    color: forestgreen;
+    border-style: solid;
+    border-width: thick;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+h4 {
+    color: forestgreen;
+}
 
 /*FOOTER*/
 
@@ -247,4 +298,8 @@ img {
 .james {
     border-style: dashed;
     border-color: firebrick;
+}
+
+.container-fluid {
+    margin-bottom: 10px;
 }
